@@ -89,7 +89,7 @@ def agente_com_um_destino():
     agente = lab.add_pacman(id)
 
     origem = agente._posicao
-    destino = lab.cel_aleatoria()
+    destino = lab.fim_aleatorio()
 
     lab.desenhar_celula(origem, 'red')
     lab.desenhar_celula(destino, 'red')

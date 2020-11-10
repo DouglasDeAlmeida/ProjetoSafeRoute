@@ -67,6 +67,11 @@ class Labirinto:
                     # Pinta a celula na posição (x,y) com a cor especificada
                     self.desenhar_celula(celula, 'azure4')
 
+                elif (self._matriz[lin][col] == 69):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    # Pinta a celula na posição (x,y) com a cor especificada
+                    self.desenhar_celula(celula, 'azure4')
+
                 elif (self._matriz[lin][col] == 0):
                     celula = self.criar_celula(coord_matr=(lin, col))
                     # Pinta a celula na posição (x,y) com a cor especificada
@@ -110,6 +115,13 @@ class Labirinto:
                     # Pinta a celula na posição (x,y) com a cor especificada
                     self.desenhar_celula(celula, 'lightgreen')
                     self.desenhar_pastilha(celula, 'white')
+                elif (self._matriz[lin][col] == 110):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    # Pinta a celula na posição (x,y) com a cor especificada
+                    self.desenhar_celula(celula, 'red')
+
+
+
 
     def cel_aleatoria(self):
         """ Retorna os índices de uma posição que seja caminho
@@ -119,6 +131,16 @@ class Labirinto:
             i, j = np.random.randint(self._dim, size=(2))
 
         return self.criar_celula(coord_matr=(i,j))
+
+    def fim_aleatorio(self):
+        """ Retorna os índices de uma posição que seja caminho
+        """
+        i, j = np.random.randint(self._dim, size=(2))
+        while (not self.eh_fim(i, j)):
+            i, j = np.random.randint(self._dim, size=(2))
+
+        celula = self.criar_celula(coord_matr=(i,j))
+        return celula
 
     def inicio_aleatorio(self):
         """ Retorna os índices de uma posição que seja caminho
@@ -146,6 +168,12 @@ class Labirinto:
                 lin < self._dim and col < self._dim and \
                 self._matriz[lin][col] == 50:
             return True
+    def eh_fim(self, lin, col):
+        """essa função foi criada para fazer com que o agente nasça em uma das entradas """
+        if lin >= 0 and col >= 0 and \
+                lin < self._dim and col < self._dim and \
+                self._matriz[lin][col] == 69:
+            return True
 
     def eh_caminho(self, lin, col):
         """ Dada uma matriz quadrada, retorna True quando (lin, col) == 1 e
@@ -164,6 +192,10 @@ class Labirinto:
         elif lin >= 0 and col >= 0 and                    \
                 lin < self._dim and col < self._dim and      \
                 self._matriz[lin][col] == 50:
+            return True
+        elif lin >= 0 and col >= 0 and                    \
+                lin < self._dim and col < self._dim and      \
+                self._matriz[lin][col] == 69:
             return True
 
     def desenhar_celula(self, celula, cor):

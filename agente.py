@@ -53,6 +53,7 @@ class Agente:
         self._turtle.pensize(1)
         # Draw face
         self._turtle.color('black', 'yellow')
+
         self._turtle.pendown()
         self._turtle.begin_fill()
         self._turtle.circle(4)
@@ -77,19 +78,23 @@ class Agente:
         self._turtle.forward(4)
         self._turtle.right(90)
         self._turtle.forward(4)
+        self._turtle.left(45)
+
 
     # Note que o nome do método mudou um pouco
     def desenhar_se(self, posicao=None):
         """ Leva a tartaruga até a posição (x,y) e desenha por exemplo um círculo
             para representar o agente (i.e., pacman, fantasmas)
         """
+
         self._turtle.clear()
         if (not posicao):
             posicao = self._posicao
 
         x, y = posicao.coord_turt_centralizada()
         self._turtle.up()
-        self._turtle.goto(x , y)
+        self._turtle.goto(x, y)
+
         self._turtle.down()
         self.homi()
 
