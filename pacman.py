@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import pygame
+
 
 from agente import Agente
 from labirinto import Labirinto
 from turtle import *
 from time import sleep
+import turtle
 
 def main():
     # Simulação 1
@@ -14,14 +17,29 @@ def main():
     #um_agente_vagueia()
 
     # Simulação 3
-    #todos_vagueiam()
+   #todos_vagueiam()
 
     # Simulação 4
     agente_com_um_destino()
-
+    #start()
     done()
 
 """ Simulações """
+def start():
+    writer = Turtle()
+    writer.hideturtle()
+    writer.goto(200, 200)
+    tempo = 7
+    turtle.listen()
+    for _ in range(13):
+        writer.clear()
+        tempo += 1
+        writer.write(tempo)
+        if turtle.onkey(up, "Up"):
+            agente_com_um_destino()
+            break
+        sleep(0.5)
+
 
 def um_agente_percorre_tudo():
     """ Simulação 1:
@@ -96,11 +114,31 @@ def agente_com_um_destino():
 
     intervalo_entre_frames = 0.1
 
-    chegou_ao_destino = False
-    while (not chegou_ao_destino):
-        chegou_ao_destino = agente.ir_a(destino)
-        # Atualiza "frame"
-        update()
-        sleep(intervalo_entre_frames)
+
+    writer = Turtle()
+    writer.hideturtle()
+    writer.goto(200, 200)
+    tempo = 7
+    turtle.listen()
+    for _ in range(13):
+        writer.clear()
+        tempo += 1
+        writer.write(tempo)
+
+        ev = pygame.event.get()
+
+        for event in ev:
+            if event.key == pygame.K_SPACE:
+
+                chegou_ao_destino = False
+                while (not chegou_ao_destino):
+                    chegou_ao_destino = agente.ir_a(destino)
+                    # Atualiza "frame"
+                    update()
+                    sleep(intervalo_entre_frames)
+                break
+        sleep(0.5)
+
+
 
 main()

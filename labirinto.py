@@ -45,7 +45,7 @@ class Labirinto:
         """ Cria uma tela do Turtle """
         tracer(False)
         hideturtle()
-        bgcolor('white')
+        bgcolor('pink')
         setup(p1, p2, p3, p4)
         self.criar_labirinto()
 
@@ -69,55 +69,47 @@ class Labirinto:
 
                 elif (self._matriz[lin][col] == 69):
                     celula = self.criar_celula(coord_matr=(lin, col))
-                    # Pinta a celula na posição (x,y) com a cor especificada
-                    self.desenhar_celula(celula, 'azure4')
+
+                    self.desenhar_celula(celula, 'white')
 
                 elif (self._matriz[lin][col] == 0):
                     celula = self.criar_celula(coord_matr=(lin, col))
-                    # Pinta a celula na posição (x,y) com a cor especificada
+
                     self.desenhar_celula(celula, 'black')
 
                 elif (self._matriz[lin][col] == 2):
                     celula = self.criar_celula(coord_matr=(lin, col))
-                    # Pinta a celula na posição (x,y) com a cor especificada
+
                     self.desenhar_celula(celula, 'pink')
                 elif (self._matriz[lin][col] == 3):
                     celula = self.criar_celula(coord_matr=(lin, col))
-                    # Pinta a celula na posição (x,y) com a cor especificada
+
                     self.desenhar_celula(celula, 'gold')
                 elif (self._matriz[lin][col] == 4):
                     celula = self.criar_celula(coord_matr=(lin, col))
-                    # Pinta a celula na posição (x,y) com a cor especificada
                     self.desenhar_celula(celula, 'violet')
                 elif (self._matriz[lin][col] == 5):
                     celula = self.criar_celula(coord_matr=(lin, col))
-                    # Pinta a celula na posição (x,y) com a cor especificada
                     self.desenhar_celula(celula, 'maroon')
                 elif (self._matriz[lin][col] == 6):
                     celula = self.criar_celula(coord_matr=(lin, col))
-                    # Pinta a celula na posição (x,y) com a cor especificada
                     self.desenhar_celula(celula, 'chocolate')
                 elif (self._matriz[lin][col] == 7):
                     celula = self.criar_celula(coord_matr=(lin, col))
-                    # Pinta a celula na posição (x,y) com a cor especificada
                     self.desenhar_celula(celula, 'cyan')
                 elif (self._matriz[lin][col] == 8):
                     celula = self.criar_celula(coord_matr=(lin, col))
-                    # Pinta a celula na posição (x,y) com a cor especificada
                     self.desenhar_celula(celula, 'navy')
                 elif (self._matriz[lin][col] == 9):
                     celula = self.criar_celula(coord_matr=(lin, col))
-                    # Pinta a celula na posição (x,y) com a cor especificada
                     self.desenhar_celula(celula, 'DarkGreen')
 
                 elif (self._matriz[lin][col] == 50):
                     celula = self.criar_celula(coord_matr=(lin, col))
-                    # Pinta a celula na posição (x,y) com a cor especificada
                     self.desenhar_celula(celula, 'lightgreen')
                     self.desenhar_pastilha(celula, 'white')
                 elif (self._matriz[lin][col] == 110):
                     celula = self.criar_celula(coord_matr=(lin, col))
-                    # Pinta a celula na posição (x,y) com a cor especificada
                     self.desenhar_celula(celula, 'red')
 
 
