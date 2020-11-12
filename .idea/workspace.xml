@@ -19,12 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4a649f9-260a-4d2d-97a6-f514454d0659" name="Default Changelist" comment="adicionado varios destinos especificos">
+    <list default="true" id="b4a649f9-260a-4d2d-97a6-f514454d0659" name="Default Changelist" comment="talvez contenha erros">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/semana15_a-estrela.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/semana15_a-estrela.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labirinto.py" beforeDir="false" afterPath="$PROJECT_DIR$/labirinto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matriz.py" beforeDir="false" afterPath="$PROJECT_DIR$/matriz.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pacman.py" beforeDir="false" afterPath="$PROJECT_DIR$/pacman.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605050798966</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="talvez contenha erros">
+      <created>1605212485809</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605212485809</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,7 +186,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adicionado varios destinos especificos" />
-    <option name="LAST_COMMIT_MESSAGE" value="adicionado varios destinos especificos" />
+    <MESSAGE value="talvez contenha erros" />
+    <option name="LAST_COMMIT_MESSAGE" value="talvez contenha erros" />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="273" key="FileChooserDialogImpl" timestamp="1605212183343">
@@ -195,22 +202,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="670" y="219" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605033713417" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1605212236741">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1605215945929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605212236741" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1605212236741">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605215945929" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1605215945929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605212236741" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1605212236741">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605215945929" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1605215945929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605212236741" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1605212236741">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605215945929" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1605215945929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605212236741" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605215945929" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1605191320208">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -227,14 +234,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605191320208" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1605212303954">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1605217374012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605212303954" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605205859543">
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605217374012" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605212495326">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605205859543" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605212495326" />
     <state x="1257" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605050883295">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

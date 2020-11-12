@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import pygame
-
-
+import keyboard
 from agente import Agente
 from labirinto import Labirinto
 from turtle import *
@@ -124,20 +122,26 @@ def agente_com_um_destino():
         writer.clear()
         tempo += 1
         writer.write(tempo)
-
-        ev = pygame.event.get()
-
-        for event in ev:
-            if event.key == pygame.K_SPACE:
-
-                chegou_ao_destino = False
-                while (not chegou_ao_destino):
-                    chegou_ao_destino = agente.ir_a(destino)
-                    # Atualiza "frame"
-                    update()
-                    sleep(intervalo_entre_frames)
-                break
+        turtle.listen()
+        z = False
         sleep(0.5)
+        def plz():
+            z = True
+            return z
+
+        if keyboard.is_pressed('q'):
+
+
+
+
+            chegou_ao_destino = False
+            while (not chegou_ao_destino):
+                chegou_ao_destino = agente.ir_a(destino)
+                # Atualiza "frame"
+                update()
+                sleep(intervalo_entre_frames)
+            break
+
 
 
 
