@@ -2,10 +2,13 @@
 # -*- coding: utf-8 -*-
 
 from turtle import *
+
+import celula
 from percursos import Waze
 import turtle
 # add as seguintes bibliotecas
 from utils import vector
+import numpy as np
 from random import choice
 
 class Agente:
@@ -128,6 +131,7 @@ class Agente:
             encontre um obstáculo, quando se muda a direção aleatoriamente
         """
         lab = self.labirinto
+        lin, col = celula.coord_matriz()
         # REQ
         # Deve obter o passo (sem efetivamente dar o passo)
         passo = self.prox_passo()
@@ -135,7 +139,7 @@ class Agente:
         # REQ
         # Deve verificar:
         # Se der o passo, continua sendo caminho (lab.eh_caminho())
-
+        if (lab.eh_caminho(passo)):
         # REQ
         # Deve verificar:
         # Se der o passo, a posição estará ocupada? (lab.eh_celula_ocupada())
@@ -147,9 +151,9 @@ class Agente:
         # Caso contrário
         # Escolhe a nova direção aleatoriamente
 
-        self.pos = prox_pos_agente
-        # Desenhar a posição na tela
-        self.desenhar_se()
+            self.pos = prox_pos_agente
+            # Desenhar a posição na tela
+            self.desenhar_se()
         return
 
     def prox_passo(self):
@@ -163,7 +167,23 @@ class Agente:
     def mudar_direcao_aleatoriamente(self):
         """ Escolhe alguma direção aleatoriamente que não seja a atual """
         # REQ implementar o método
-        pass
+
+        """
+        random_number = np.random.randint(0, 4)
+        print(random_number)
+        if random_number == 0:
+            
+        elif random_number == 1:
+            #right
+        elif random_number == 2:
+            #left
+        elif random_number == 3:
+            #down
+            
+        return pass
+"""
+
+
 
     """
     ROTA

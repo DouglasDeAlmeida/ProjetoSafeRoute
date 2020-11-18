@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import keyboard
+#import keyboard
+from dict import Aglomeracao
 from agente import Agente
 from labirinto import Labirinto
 from turtle import *
@@ -17,6 +18,11 @@ def main():
     # Simulação 3
    #todos_vagueiam()
 
+
+    #print(
+    #input()
+    #print
+    print(Aglomeracao.segunda)
     # Simulação 4
     agente_com_um_destino()
     #start()
@@ -102,7 +108,9 @@ def agente_com_um_destino():
     dimensao_da_matriz = 20
     lab = Labirinto(dimensao_da_matriz)
     id = 0
+
     agente = lab.add_pacman(id)
+    ghost = lab.add_fantasma(2)
 
     origem = agente._posicao
     destino = lab.fim_aleatorio()
@@ -122,27 +130,14 @@ def agente_com_um_destino():
         writer.clear()
         tempo += 1
         writer.write(tempo)
-        turtle.listen()
-        z = False
+
         sleep(0.5)
-        def plz():
-            z = True
-            return z
 
-        if keyboard.is_pressed('q'):
-
-
-
-
-            chegou_ao_destino = False
-            while (not chegou_ao_destino):
-                chegou_ao_destino = agente.ir_a(destino)
-                # Atualiza "frame"
-                update()
-                sleep(intervalo_entre_frames)
-            break
-
-
-
+    chegou_ao_destino = False
+    while (not chegou_ao_destino):
+        chegou_ao_destino = agente.ir_a(destino)
+        # Atualiza "frame"
+        update()
+        sleep(intervalo_entre_frames)
 
 main()

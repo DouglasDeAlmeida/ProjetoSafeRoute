@@ -45,7 +45,7 @@ class Labirinto:
         """ Cria uma tela do Turtle """
         tracer(False)
         hideturtle()
-        bgcolor('black')
+        bgcolor('white')
         setup(p1, p2, p3, p4)
         self.criar_labirinto()
 
@@ -65,12 +65,12 @@ class Labirinto:
 
                     celula = self.criar_celula(coord_matr=(lin, col))
                     # Pinta a celula na posição (x,y) com a cor especificada
-                    self.desenhar_celula(celula, 'azure4')
+                    self.desenhar_celula(celula, 'azure3')
 
                 elif (self._matriz[lin][col] == 69):
                     celula = self.criar_celula(coord_matr=(lin, col))
 
-                    self.desenhar_celula(celula, 'white')
+                    self.desenhar_celula(celula, 'azure3')
 
                 elif (self._matriz[lin][col] == 0):
                     celula = self.criar_celula(coord_matr=(lin, col))
@@ -103,6 +103,108 @@ class Labirinto:
                 elif (self._matriz[lin][col] == 9):
                     celula = self.criar_celula(coord_matr=(lin, col))
                     self.desenhar_celula(celula, 'DarkGreen')
+
+                elif (self._matriz[lin][col] == 12):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'AntiqueWhite')
+                elif (self._matriz[lin][col] == 13):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'bisque4')
+                elif (self._matriz[lin][col] == 14):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'Cadetblue')
+                elif (self._matriz[lin][col] == 15):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DarkOrchid')
+                elif (self._matriz[lin][col] == 16):
+
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DarkViolet')
+
+                elif (self._matriz[lin][col] == 17):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DarkSeaGreen2')
+                elif (self._matriz[lin][col] == 18):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'CornflowerBlue')
+                elif (self._matriz[lin][col] == 19):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'chartreuse')
+                elif (self._matriz[lin][col] == 20):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DeepSkyBlue')
+                elif (self._matriz[lin][col] == 21):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DarkGray')
+                elif (self._matriz[lin][col] == 22):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DarkOliveGreen')
+                elif (self._matriz[lin][col] == 23):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DarkMagenta')
+                elif (self._matriz[lin][col] == 24):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DeepPink')
+                elif (self._matriz[lin][col] == 25):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'azure')
+                elif (self._matriz[lin][col] == 26):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DarkSlateGrey')
+                elif (self._matriz[lin][col] == 27):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DarkGrey')
+                elif (self._matriz[lin][col] == 28):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'cornsilk')
+                elif (self._matriz[lin][col] == 29):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'cornsilk4')
+                elif (self._matriz[lin][col] == 30):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DarkOrange')
+                elif (self._matriz[lin][col] == 32):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DarkGoldenrod1')
+                elif (self._matriz[lin][col] == 33):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'cyan4')
+                elif (self._matriz[lin][col] == 34):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'burlywood3')
+                elif (self._matriz[lin][col] == 35):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'chartreuse2')
+                elif (self._matriz[lin][col] == 36):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'azure4')
+                elif (self._matriz[lin][col] == 37):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'azure3')
+                elif (self._matriz[lin][col] == 38):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'aquamarine2')
+                elif (self._matriz[lin][col] == 39):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DarkOrange3')
+                elif (self._matriz[lin][col] == 40):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DarkBlue')
+                elif (self._matriz[lin][col] == 41):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DarkTurquoise')
+                elif (self._matriz[lin][col] == 42):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'chocolate4')
+                elif (self._matriz[lin][col] == 43):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DarkSlateGrey')
+                elif (self._matriz[lin][col] == 44):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DarkRed')
+                elif (self._matriz[lin][col] == 45):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+                    self.desenhar_celula(celula, 'DeepPink4')
 
                 elif (self._matriz[lin][col] == 50):
                     celula = self.criar_celula(coord_matr=(lin, col))
@@ -248,7 +350,10 @@ class Labirinto:
         # REQ
         # Deve verificar no dicionário de agentes se a célula do parâmetro está
         # sendo ocupada por algum agente
-        return False
+        """  for e in self.agentes:
+            if e != agente_id:"""
+
+       # return False
 
     def dist_manhattan(self, origem, destino):
         """ Retorna a distância manhattan entre dois pontos do labirinto """
