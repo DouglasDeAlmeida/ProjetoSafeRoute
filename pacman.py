@@ -7,7 +7,7 @@ from labirinto import Labirinto
 from turtle import *
 from time import sleep
 import turtle
-
+import myInput
 def main():
     # Simulação 1
     # um_agente_percorre_tudo()
@@ -22,9 +22,10 @@ def main():
     #print(
     #input()
     #print
-    print(Aglomeracao.segunda)
+    #myInput.qtd_fantasmas()
     # Simulação 4
-    agente_com_um_destino()
+    #
+    #agente_com_um_destino()
     #start()
     done()
 
@@ -86,7 +87,7 @@ def todos_vagueiam():
     id = 0
     pacman = lab.add_pacman(id)
 
-    n_fantasmas = 10
+    n_fantasmas = Crowding.nGhosts #define a quantidade de fantasmas de acordo com a aglomeração
     for id in range(1, n_fantasmas):
         f = lab.add_fantasma(id)
 
@@ -119,19 +120,6 @@ def agente_com_um_destino():
     lab.desenhar_celula(destino, 'red')
 
     intervalo_entre_frames = 0.1
-
-
-    writer = Turtle()
-    writer.hideturtle()
-    writer.goto(200, 200)
-    tempo = 7
-    turtle.listen()
-    for _ in range(13):
-        writer.clear()
-        tempo += 1
-        writer.write(tempo)
-
-        sleep(0.5)
 
     chegou_ao_destino = False
     while (not chegou_ao_destino):

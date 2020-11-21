@@ -26,6 +26,7 @@ class Agente:
         # define a cor do agente
         self._cor = cor
         # REQ
+
         # deve definir a cor do agente aleatoriamente (verde, vermelho, rosa, laranja e marrom)
         # se não for passado no construtor
         # é um gerador de percursos
@@ -147,14 +148,41 @@ class Agente:
         # REQ
         # Definir qual é a próxima posição do agente
         # Caso a posição não esteja ocupada ocupada e nem seja caminho:
+
         # Muda o agente para a posição do novo passo
+            self.pos = prox_pos_agente
+        # Desenhar a posição na tela
+            self.desenhar_se()
         # Caso contrário
         # Escolhe a nova direção aleatoriamente
+        else:
 
-            self.pos = prox_pos_agente
-            # Desenhar a posição na tela
-            self.desenhar_se()
-        return
+
+            def vaguear(self):
+                """ Vaguear significa continuar andando na mesma direção até que se
+                    encontre um obstáculo, quando se muda a direção aleatoriamente
+                """
+
+            lab = self.labirinto
+            # REQ
+            # Deve obter o passo (sem efetivamente dar o passo)
+            passo = self.prox_passo()
+            prox_pos_agente = None
+            if passo == lab.eh_caminho():
+        # Deve verificar:
+        # Se der o passo, continua sendo caminho (lab.eh_caminho())
+        if passo not lab.eh_celula_ocupada():
+            vaguear = passo.move(self.percorrer())
+            return passo
+        # Deve verificar:
+        # Se der o passo, a posição estará ocupada? (lab.eh_celula_ocupada())
+        else:
+            s1 = self.mudar_direcao_aleatoriamente()
+            return s1
+
+
+
+
 
     def prox_passo(self):
         """ Obtém o próximo passo do agente na direção em que se encontra """
@@ -167,21 +195,40 @@ class Agente:
     def mudar_direcao_aleatoriamente(self):
         """ Escolhe alguma direção aleatoriamente que não seja a atual """
         # REQ implementar o método
+        """ k1 = [
+            vector(1, 0),  # este vector significa direita
+            vector(-1, 0),  # esquerda
+            vector(0, 1),  # cima
+            vector(0, -1),  # baixo
+        ]
 
+        
+
+        teste=np.random.choice(k1)
+        print(teste)
         """
         random_number = np.random.randint(0, 4)
-        print(random_number)
+
+
         if random_number == 0:
-            
+            #up
+            z1 = vector(0, 1)#up
+            return z1
         elif random_number == 1:
             #right
+            z1 = vector(1, 0)
+            return z1
         elif random_number == 2:
             #left
+            z1 = vector(-1, 0)
+            return z1
         elif random_number == 3:
             #down
+            z1 = vector(0, -1)
+            return z1
             
-        return pass
-"""
+
+
 
 
 
