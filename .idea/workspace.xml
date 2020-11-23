@@ -19,13 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4a649f9-260a-4d2d-97a6-f514454d0659" name="Default Changelist" comment="Projeto com o mapa todo colorido">
+    <list default="true" id="b4a649f9-260a-4d2d-97a6-f514454d0659" name="Default Changelist" comment="FALTA FAZER O MOVIMENTO NO ARQUIVO AGENTE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agente.py" beforeDir="false" afterPath="$PROJECT_DIR$/agente.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labirinto.py" beforeDir="false" afterPath="$PROJECT_DIR$/labirinto.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matriz.py" beforeDir="false" afterPath="$PROJECT_DIR$/matriz.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myInput.py" beforeDir="false" afterPath="$PROJECT_DIR$/myInput.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pacman.py" beforeDir="false" afterPath="$PROJECT_DIR$/pacman.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/percursos.py" beforeDir="false" afterPath="$PROJECT_DIR$/percursos.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,7 @@
       <recent name="C:\Users\PICHAU\PycharmProjects" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.scratch_9">
+  <component name="RunManager" selected="Python.pacman">
     <configuration name="InputCarlos (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="semana15_a-estrela" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -82,7 +82,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="myInput" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="labirinto" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="semana15_a-estrela" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,7 +94,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myInput.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labirinto.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pacman" />
+        <item itemvalue="Python.labirinto" />
         <item itemvalue="Python.scratch_9" />
         <item itemvalue="Python.scratch_8" />
         <item itemvalue="Python.InputCarlos (1)" />
-        <item itemvalue="Python.pacman" />
-        <item itemvalue="Python.myInput" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605736343703</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="FALTA FAZER O MOVIMENTO NO ARQUIVO AGENTE">
+      <created>1605963965526</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605963965526</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,7 +240,8 @@
     <MESSAGE value="talvez contenha erros" />
     <MESSAGE value="teste1" />
     <MESSAGE value="Projeto com o mapa todo colorido" />
-    <option name="LAST_COMMIT_MESSAGE" value="Projeto com o mapa todo colorido" />
+    <MESSAGE value="FALTA FAZER O MOVIMENTO NO ARQUIVO AGENTE" />
+    <option name="LAST_COMMIT_MESSAGE" value="FALTA FAZER O MOVIMENTO NO ARQUIVO AGENTE" />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="273" key="FileChooserDialogImpl" timestamp="1605962968386">
@@ -249,31 +257,35 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="670" y="219" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605033713417" />
-    <state width="1899" height="323" key="GridCell.Tab.0.bottom" timestamp="1605961737767">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1345" height="453" key="GridCell.Tab.0.bottom" timestamp="1606158123416">
+      <screen x="-1366" y="165" width="1366" height="728" />
     </state>
-    <state width="1899" height="323" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1366.165.1366.728@0.0.1920.1040" timestamp="1605961737767" />
+    <state width="1345" height="453" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1366.165.1366.728@-1366.165.1366.728" timestamp="1606158123416" />
+    <state width="1899" height="454" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1366.165.1366.728@0.0.1920.1040" timestamp="1606157933808" />
     <state width="1899" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1605743250502" />
     <state width="1899" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1366.728@1920.0.1366.728" timestamp="1605747718254" />
     <state width="1899" height="324" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605729796338" />
-    <state width="1899" height="323" key="GridCell.Tab.0.center" timestamp="1605961737766">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1345" height="453" key="GridCell.Tab.0.center" timestamp="1606158123415">
+      <screen x="-1366" y="165" width="1366" height="728" />
     </state>
-    <state width="1899" height="323" key="GridCell.Tab.0.center/0.0.1920.1040/-1366.165.1366.728@0.0.1920.1040" timestamp="1605961737766" />
+    <state width="1345" height="453" key="GridCell.Tab.0.center/0.0.1920.1040/-1366.165.1366.728@-1366.165.1366.728" timestamp="1606158123415" />
+    <state width="1899" height="454" key="GridCell.Tab.0.center/0.0.1920.1040/-1366.165.1366.728@0.0.1920.1040" timestamp="1606157933808" />
     <state width="1899" height="207" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1605743250502" />
     <state width="1899" height="207" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1366.728@1920.0.1366.728" timestamp="1605747718254" />
     <state width="1899" height="324" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605729796338" />
-    <state width="1899" height="323" key="GridCell.Tab.0.left" timestamp="1605961737766">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1345" height="453" key="GridCell.Tab.0.left" timestamp="1606158123415">
+      <screen x="-1366" y="165" width="1366" height="728" />
     </state>
-    <state width="1899" height="323" key="GridCell.Tab.0.left/0.0.1920.1040/-1366.165.1366.728@0.0.1920.1040" timestamp="1605961737766" />
+    <state width="1345" height="453" key="GridCell.Tab.0.left/0.0.1920.1040/-1366.165.1366.728@-1366.165.1366.728" timestamp="1606158123415" />
+    <state width="1899" height="454" key="GridCell.Tab.0.left/0.0.1920.1040/-1366.165.1366.728@0.0.1920.1040" timestamp="1606157933807" />
     <state width="1899" height="207" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1605743250502" />
     <state width="1899" height="207" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1366.728@1920.0.1366.728" timestamp="1605747718254" />
     <state width="1899" height="324" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605729796338" />
-    <state width="1899" height="323" key="GridCell.Tab.0.right" timestamp="1605961737767">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1345" height="453" key="GridCell.Tab.0.right" timestamp="1606158123416">
+      <screen x="-1366" y="165" width="1366" height="728" />
     </state>
-    <state width="1899" height="323" key="GridCell.Tab.0.right/0.0.1920.1040/-1366.165.1366.728@0.0.1920.1040" timestamp="1605961737767" />
+    <state width="1345" height="453" key="GridCell.Tab.0.right/0.0.1920.1040/-1366.165.1366.728@-1366.165.1366.728" timestamp="1606158123416" />
+    <state width="1899" height="454" key="GridCell.Tab.0.right/0.0.1920.1040/-1366.165.1366.728@0.0.1920.1040" timestamp="1606157933808" />
     <state width="1899" height="207" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1605743250502" />
     <state width="1899" height="207" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1366.728@1920.0.1366.728" timestamp="1605747718254" />
     <state width="1899" height="324" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605729796338" />
@@ -306,9 +318,10 @@
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1366.165.1366.728@0.0.1920.1040" timestamp="1605962944902" />
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605307603406" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605736352546">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605963974466">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1366.165.1366.728@0.0.1920.1040" timestamp="1605963974466" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1605736352546" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605217511604" />
     <state x="1257" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605736397803">
@@ -316,9 +329,22 @@
     </state>
     <state x="1257" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1605736397803" />
     <state x="1257" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605050883295" />
-    <state x="1920" y="0" width="1382" height="792" key="dock-window-1" timestamp="1605739346741">
-      <screen x="1920" y="0" width="1366" height="728" />
+    <state x="-911" y="374" width="1128" height="568" key="dock-window-1" timestamp="1606158205490">
+      <screen x="-1366" y="165" width="1366" height="728" />
     </state>
+    <state x="-911" y="374" width="1128" height="568" key="dock-window-1/0.0.1920.1040/-1366.165.1366.728@-1366.165.1366.728" timestamp="1606158205490" />
+    <state x="-1366" y="165" width="1382" height="815" key="dock-window-1/0.0.1920.1040/-1366.165.1366.728@0.0.1920.1040" timestamp="1606157896978" />
     <state x="1920" y="0" width="1382" height="792" key="dock-window-1/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1605739346741" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pacman.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

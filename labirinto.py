@@ -72,6 +72,11 @@ class Labirinto:
 
                     self.desenhar_celula(celula, 'azure3')
 
+                elif (self._matriz[lin][col] == 25):
+                    celula = self.criar_celula(coord_matr=(lin, col))
+
+                    self.desenhar_celula(celula, 'azure3')
+
                 elif (self._matriz[lin][col] == 0):
                     celula = self.criar_celula(coord_matr=(lin, col))
 
@@ -189,6 +194,12 @@ class Labirinto:
         elif lin >= 0 and col >= 0 and                    \
                 lin < self._dim and col < self._dim and      \
                 self._matriz[lin][col] == 69:
+
+            return True
+        elif lin >= 0 and col >= 0 and \
+                lin < self._dim and col < self._dim and \
+                self._matriz[lin][col] == 25:
+
             return True
 
     def desenhar_celula(self, celula, cor):
@@ -249,15 +260,27 @@ class Labirinto:
         # REQ
         # Deve verificar no dicionário de agentes se a célula do parâmetro está
         # sendo ocupada por algum agente
-        """  for e in self.agentes:
-            if e != agente_id:"""
 
+        #if agente_id.celula.x == celula.x and agente_id.celula.y == celula.y:
+        """  lin, col = celula.coord_matriz()
 
+        for agente_id in self.agentes:
 
-       # return False
+            if agente_id == celula(lin, col):
+
+                return False
+        """
+        Celula(self, pai=None, coord_matr=None, coord_turt=None, tam_cel=None, dim=None)
+        self.agentes[agente_id]._posicao == celula.coord_turt
+        for id in self.agentes.keys():
+            if id != agente_id and self.agentes[id]._posicao == celula:
+                return True
+        return False
+
 
     def dist_manhattan(self, origem, destino):
         """ Retorna a distância manhattan entre dois pontos do labirinto """
         xo, yo = origem
         xd, yd = destino
         return abs(xo - xd) + abs(yo - yd)
+

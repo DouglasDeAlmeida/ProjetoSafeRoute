@@ -13,12 +13,12 @@ def main():
     # um_agente_percorre_tudo()
 
     # Simulação 2
-    #um_agente_vagueia()
+    um_agente_vagueia()
 
     # Simulação 3
-   #todos_vagueiam()
+    #todos_vagueiam()
 
-
+    #Labirinto.teste()
     #print(
     #input()
     #print
@@ -69,13 +69,14 @@ def um_agente_vagueia():
 
     dimensao_da_matriz = 20
     lab = Labirinto(dimensao_da_matriz)
+
     id = 0
     pacman = lab.add_pacman(id)
 
     n_frames = 500
     intervalo_entre_frames = 0.1
     for _ in range(n_frames):
-        pacman.vaguear()
+        pacman.vaguear(lab)
         update()
         sleep(intervalo_entre_frames)
 
@@ -87,7 +88,7 @@ def todos_vagueiam():
     id = 0
     pacman = lab.add_pacman(id)
 
-    n_fantasmas = Crowding.nGhosts #define a quantidade de fantasmas de acordo com a aglomeração
+    n_fantasmas = 10 #define a quantidade de fantasmas de acordo com a aglomeração
     for id in range(1, n_fantasmas):
         f = lab.add_fantasma(id)
 
@@ -97,7 +98,7 @@ def todos_vagueiam():
     agentes = lab.agentes
     for _ in range(n_frames):
         for id in agentes.keys():
-            agentes[id].vaguear()
+            agentes[id].vaguear(lab)
         # Atualiza "frame"
         update()
         sleep(intervalo_entre_frames)

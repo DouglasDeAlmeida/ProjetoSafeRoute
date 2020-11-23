@@ -90,14 +90,18 @@ class Waze:
         return caminho
 
     def obter_vizinhos(self, celula):
-        """ Retorna os vizinhos de uma célula utilizando um outro método """
+        """ Retorna os vizinhos de uma célula utilizando um outro método
+         TODO: adicionar o celula ocupada o if"""
+
+        #if (lab.eh_caminho(passo) == True) and (lab.eh_celula_ocupada(passo) == False):
+        #and (lab.eh_celula_ocupada(vlin, vcol)==False)
         lab = self.labirinto # Para aumentar a legibilidade
         lst_vizinhos = []
         for factor in [(0, -1), (0, 1), (-1, 0), (1, 0)]: # Fatores para obter os vizinhos
             i, j = factor
             lin, col = celula._coord_matr
             vlin, vcol = lin + i, col + j
-            if (lab.eh_caminho( vlin, vcol )):
+            if (lab.eh_caminho( vlin, vcol ) == True) :
                 vizinho = lab.criar_celula(pai=celula, coord_matr=(vlin,vcol))
                 lst_vizinhos.append(vizinho)
         return lst_vizinhos
