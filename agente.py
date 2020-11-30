@@ -3,7 +3,7 @@
 
 from turtle import *
 
-import celula
+from celula import Celula
 
 from percursos import Waze
 import turtle
@@ -51,11 +51,11 @@ class Agente:
         # Deve funcionar para passos menores que lab._tam_celula
         self.tam_passo = lab._tam_celula
 
-    def homi(self):
+    def homi(self, cor):
 
         self._turtle.pensize(1)
         # Draw face
-        self._turtle.color('black', 'yellow')
+        self._turtle.color('black', cor)
 
         self._turtle.pendown()
         self._turtle.begin_fill()
@@ -98,7 +98,7 @@ class Agente:
         self._turtle.goto(x, y)
 
         self._turtle.down()
-        self.homi()
+        self.homi(self._cor)
 
     """ Métodos de percurso """
 
@@ -125,52 +125,32 @@ class Agente:
 
         return False  # Se chegou até aqui é o porque não terminou o percurso e retorna False
 
-    def vaguear(self, lab):
+    def vaguear(self):
         """ Vaguear significa continuar andando na mesma direção até que se
             encontre um obstáculo, quando se muda a direção aleatoriamente
         """
-        # lab = Labirinto
-        # lin, col = celula.coord_matriz()
 
+        lab = self._labirinto
         # REQ
         # Deve obter o passo (sem efetivamente dar o passo)
         passo = self.prox_passo()
-        prox_pos_agente = None
-        """  # REQ
-        # Deve verificar:
-        # Se der o passo, continua sendo caminho (lab.eh_caminho())
-        if (lab.eh_caminho(passo)):
-        # REQ
-        # Deve verificar:
-        # Se der o passo, a posição estará ocupada? (lab.eh_celula_ocupada())
 
-        # REQ
-        # Definir qual é a próxima posição do agente
-        # Caso a posição não esteja ocupada ocupada e nem seja caminho:
+        dx, dy = passo
+        x, y = self._posicao.coord_turtle() # ou .coord_turtle()
 
-        # Muda o agente para a posição do novo passo
-            self.pos = prox_pos_agente
-        # Desenhar a posição na tela
-            self.desenhar_se()
-        # Caso contrário
-        # Escolhe a nova direção aleatoriamente
+        nova_posicao = lab.criar_celula(coord_turt=(x + dx, y + dy))
+        lin, col = nova_posicao.coord_matriz()
+        if lab.eh_caminho(lin, col):
+            #nova_posicao = lab.criar_celula(coord_matr=(lin, col))
+            self._posicao = nova_posicao
 
-        # Deve verificar:
-        # Se der o passo, a posição estará ocupada? (lab.eh_celula_ocupada())
-        else:
-            s1 = self.mudar_direcao_aleatoriamente()
-         
-            return s1"""
-
-        if lab.eh_caminho(passo[0], passo[1]):
-            if not lab.eh_celula_ocupada(passo[0], passo[1]):
-                prox_pos_agente = passo  # Muda o agente para a posição do novo passo
-                c2 = self.desenhar_se(prox_pos_agente)
-                return c2
         else:  # Caso contrário
-            x2 = self.mudar_direcao_aleatoriamente()
-            return x2
+            nova_posicao = self._posicao
 
+            self.direcao= self.mudar_direcao_aleatoriamente()
+
+        #self._posicao = nova_posicao
+        self.desenhar_se()
     def prox_passo(self):
         """ Obtém o próximo passo do agente na direção em que se encontra """
         dir_x = self.direcao[0] * self.tam_passo
@@ -194,24 +174,9 @@ class Agente:
         teste=np.random.choice(k1)
         print(teste)
         """
-        random_number = np.random.randint(0, 4)
-
-        if random_number == 0:
-            # up
-            z1 = vector(0, 1)  # up
-            return z1
-        elif random_number == 1:
-            # right
-            z1 = vector(1, 0)
-            return z1
-        elif random_number == 2:
-            # left
-            z1 = vector(-1, 0)
-            return z1
-        elif random_number == 3:
-            # down
-            z1 = vector(0, -1)
-            return z1
+        random_direction= [vector(1, 0), vector(-1, 0), vector(0, 1), vector(0, -1)]
+        x = choice(random_direction)
+        return x
 
     """
     ROTA

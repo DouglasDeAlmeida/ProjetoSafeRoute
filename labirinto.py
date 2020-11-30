@@ -41,7 +41,7 @@ class Labirinto:
         #self._matriz = Matriz().aleatoria(dimensao)
         self._matriz = Matriz().ler_fixa()
 
-    def criar_tela(self, p1=420, p2=420, p3=370, p4=0):
+    def criar_tela(self, p1=720, p2=720, p3=370, p4=0):
         """ Cria uma tela do Turtle """
         tracer(False)
         hideturtle()
@@ -261,22 +261,22 @@ class Labirinto:
         # Deve verificar no dicionário de agentes se a célula do parâmetro está
         # sendo ocupada por algum agente
 
-        #if agente_id.celula.x == celula.x and agente_id.celula.y == celula.y:
-        """  lin, col = celula.coord_matriz()
 
-        for agente_id in self.agentes:
 
-            if agente_id == celula(lin, col):
-
-                return False
-        """
-        Celula(self, pai=None, coord_matr=None, coord_turt=None, tam_cel=None, dim=None)
-        self.agentes[agente_id]._posicao == celula.coord_turt
-        for id in self.agentes.keys():
-            if id != agente_id and self.agentes[id]._posicao == celula:
+        i,j = celula.coord_matriz() #linha e coluna da célula sob investigação
+        for k in self.agentes.keys():#para cada k no dicionário (agentes)
+            v,b = self.agentes[k]._posicao.coord_matriz()
+            if (v,b == i,j):
                 return True
-        return False
+            else:
+                return False
 
+        '''for id in self.agentes.keys():
+
+            if id != agente_id and self.agentes[id]._posicao.coord_turtle() == celula:
+                return True
+            else:
+                return False'''
 
     def dist_manhattan(self, origem, destino):
         """ Retorna a distância manhattan entre dois pontos do labirinto """
