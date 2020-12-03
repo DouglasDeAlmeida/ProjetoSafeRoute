@@ -101,6 +101,7 @@ class Waze:
             i, j = factor
             lin, col = celula._coord_matr
             vlin, vcol = lin + i, col + j
+
             if (lab.eh_caminho( vlin, vcol ) == True) :
                 vizinho = lab.criar_celula(pai=celula, coord_matr=(vlin,vcol))
                 lst_vizinhos.append(vizinho)

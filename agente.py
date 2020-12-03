@@ -51,6 +51,13 @@ class Agente:
         # Deve funcionar para passos menores que lab._tam_celula
         self.tam_passo = lab._tam_celula
 
+    def add_inicio_de_fantasma(self, lab):
+        self._labirinto = lab
+        self._posicao = lab.cel_aleatoria()
+        # REQ
+        # Deve funcionar para passos menores que lab._tam_celula
+        self.tam_passo = lab._tam_celula
+
     def homi(self, cor):
 
         self._turtle.pensize(1)
@@ -129,28 +136,24 @@ class Agente:
         """ Vaguear significa continuar andando na mesma direção até que se
             encontre um obstáculo, quando se muda a direção aleatoriamente
         """
-
         lab = self._labirinto
         # REQ
         # Deve obter o passo (sem efetivamente dar o passo)
         passo = self.prox_passo()
-
         dx, dy = passo
-        x, y = self._posicao.coord_turtle() # ou .coord_turtle()
+        x, y = self._posicao.coord_turtle()  # ou .coord_turtle()
+        prox_passo = lab.criar_celula(coord_turt=(x + dx, y + dy))
+        lin, col = prox_passo.coord_matriz()
 
-        nova_posicao = lab.criar_celula(coord_turt=(x + dx, y + dy))
-        lin, col = nova_posicao.coord_matriz()
-        if lab.eh_caminho(lin, col):
-            #nova_posicao = lab.criar_celula(coord_matr=(lin, col))
-            self._posicao = nova_posicao
-
+        if lab.eh_caminho(lin, col) and not (lab.eh_celula_ocupada((lin, col), self._id)):  # colocar numa variavel e comparar
+            # nova_posicao = lab.criar_celula(coord_matr=(lin, col))
+            self._posicao = prox_passo
         else:  # Caso contrário
-            nova_posicao = self._posicao
-
-            self.direcao= self.mudar_direcao_aleatoriamente()
-
-        #self._posicao = nova_posicao
+            prox_passo = self._posicao
+            self.direcao = self.mudar_direcao_aleatoriamente()
+        # self._posicao = nova_posicao
         self.desenhar_se()
+
     def prox_passo(self):
         """ Obtém o próximo passo do agente na direção em que se encontra """
         dir_x = self.direcao[0] * self.tam_passo
@@ -174,9 +177,9 @@ class Agente:
         teste=np.random.choice(k1)
         print(teste)
         """
-        random_direction= [vector(1, 0), vector(-1, 0), vector(0, 1), vector(0, -1)]
-        x = choice(random_direction)
-        return x
+        passo = [vector(1, 0), vector(-1, 0), vector(0, 1), vector(0, -1)]
+        random = choice(passo)
+        return random
 
     """
     ROTA

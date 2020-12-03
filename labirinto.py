@@ -39,9 +39,9 @@ class Labirinto:
     def criar_matriz(self, dimensao):
         """ Cria uma matriz """
         #self._matriz = Matriz().aleatoria(dimensao)
-        self._matriz = Matriz().ler_fixa()
-
-    def criar_tela(self, p1=720, p2=720, p3=370, p4=0):
+        #self._matriz = Matriz().ler_fixa()
+        self._matriz = Matriz().carregar_de()
+    def criar_tela(self, p1=900, p2=900, p3=370, p4=0):
         """ Cria uma tela do Turtle """
         tracer(False)
         hideturtle()
@@ -251,32 +251,23 @@ class Labirinto:
         """ Adiciona um fantasma ao labirinto """
         tam_agente = self._tam_celula
         f = Agente(id, tam_agente, 'red')
-        f.add_labirinto(self)
+        f.add_inicio_de_fantasma(self)
         self.agentes[id] = f
         return f
 
-    def eh_celula_ocupada(self, celula, agente_id):
+    def eh_celula_ocupada(self, prox_passo, agente_id):
         """ Verifica se uma celula tem algum agente diferente do agente_id """
         # REQ
         # Deve verificar no dicionário de agentes se a célula do parâmetro está
         # sendo ocupada por algum agente
-
-
-
-        i,j = celula.coord_matriz() #linha e coluna da célula sob investigação
-        for k in self.agentes.keys():#para cada k no dicionário (agentes)
-            v,b = self.agentes[k]._posicao.coord_matriz()
-            if (v,b == i,j):
+        for id in self.agentes.keys():
+            if id != agente_id and self.agentes[id]._posicao.coord_matriz() == prox_passo:
                 return True
-            else:
-                return False
 
-        '''for id in self.agentes.keys():
+        return False
 
-            if id != agente_id and self.agentes[id]._posicao.coord_turtle() == celula:
-                return True
-            else:
-                return False'''
+
+
 
     def dist_manhattan(self, origem, destino):
         """ Retorna a distância manhattan entre dois pontos do labirinto """

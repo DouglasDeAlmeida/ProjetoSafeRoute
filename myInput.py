@@ -54,17 +54,17 @@ def qtd_fantasmas():
     if nivel_aglomeracao <= 30:
         v = print('Nivel de aglomeração baixo')
         #fazer 2 fantasmas
-        nGhosts = 2
+        nGhosts = 10
         return nGhosts
     elif (nivel_aglomeracao > 30 and nivel_aglomeracao<= 65):
         v =print('Nivel de algomeração medio')
         #fazer 6 fantasmas
-        nGhosts = 6
+        nGhosts = 30
         return nGhosts
     elif (nivel_aglomeracao > 65):
-        v =print('Nivel de aglomeração alto')
+        v =print('Nivel de aglomeração alto, recomendamos aguardar. Caso precise continuar, o caminho a seguir é o mais rápido.')
         #fazer 10 fantasmas
-        nGhosts = 10
+        nGhosts = 60
         return nGhosts
 
 
