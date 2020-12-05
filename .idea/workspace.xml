@@ -20,13 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4a649f9-260a-4d2d-97a6-f514454d0659" name="Default Changelist" comment="contem erros5">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agente.py" beforeDir="false" afterPath="$PROJECT_DIR$/agente.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labirinto.py" beforeDir="false" afterPath="$PROJECT_DIR$/labirinto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matriz.py" beforeDir="false" afterPath="$PROJECT_DIR$/matriz.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myInput.py" beforeDir="false" afterPath="$PROJECT_DIR$/myInput.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pacman.py" beforeDir="false" afterPath="$PROJECT_DIR$/pacman.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/percursos.py" beforeDir="false" afterPath="$PROJECT_DIR$/percursos.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +50,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -91,11 +89,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/Pacman_S07" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Pacman_S07" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/Pacman_S07/pacman.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Pacman_S07/pacman.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,8 +168,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.pacman" />
-        <item itemvalue="Python.myInput" />
         <item itemvalue="Python.scratch_9" />
+        <item itemvalue="Python.myInput" />
         <item itemvalue="Python.pacman (1)" />
         <item itemvalue="Python.scratch_8" />
       </list>
@@ -251,6 +249,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <MESSAGE value="adicionado varios destinos especificos" />
     <MESSAGE value="talvez contenha erros" />
     <MESSAGE value="teste1" />
@@ -265,7 +266,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pacman.py</url>
-          <line>59</line>
+          <line>57</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

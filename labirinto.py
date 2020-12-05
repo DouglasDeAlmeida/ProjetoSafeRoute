@@ -39,13 +39,13 @@ class Labirinto:
     def criar_matriz(self, dimensao):
         """ Cria uma matriz """
         #self._matriz = Matriz().aleatoria(dimensao)
-        #self._matriz = Matriz().ler_fixa()
-        self._matriz = Matriz().carregar_de()
+        self._matriz = Matriz().ler_fixa()
+        #self._matriz = Matriz().carregar_de()
     def criar_tela(self, p1=900, p2=900, p3=370, p4=0):
         """ Cria uma tela do Turtle """
         tracer(False)
         hideturtle()
-        bgcolor('white')
+        bgpic(r'C:\Users\PICHAU\PycharmProjects\ProjetoSafeRoute\legend.gif')
         setup(p1, p2, p3, p4)
         self.criar_labirinto()
 

@@ -1,16 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-#import keyboard
-from dict import Aglomeracao
-from agente import Agente
 from labirinto import Labirinto
 from turtle import *
 from time import sleep
-import turtle
+
 import myInput
 def main():
+    '''IMPORTANTE: BAIXAR O ARQUIVO "legend.gif" e colocar o caminho dele no método criar_tela (labirinto)'''
     #esse é o método principal
-    projeto_SaferRoute()
+    #projeto_SaferRoute()
 
     #REQ-02
     #um_agente_vagueia()
@@ -25,7 +23,7 @@ def main():
     #varios_agentes_percorrem_tudo()#OBS: precisa definir no input a quantidade agentes
 
     #REQ-07
-    #agente_com_um_destino()
+    agente_com_um_destino()
 
     #REQ-08
     #agente_com_n_destinos()#OBS: precisa definir no input a quantidade agentes

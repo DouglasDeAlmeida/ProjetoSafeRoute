@@ -54,16 +54,14 @@ class Agente:
     def add_inicio_de_fantasma(self, lab):
         self._labirinto = lab
         self._posicao = lab.cel_aleatoria()
-        # REQ
-        # Deve funcionar para passos menores que lab._tam_celula
         self.tam_passo = lab._tam_celula
 
     def homi(self, cor):
 
         self._turtle.pensize(1)
-        # Draw face
-        self._turtle.color('black', cor)
 
+        self._turtle.color('black', cor)
+        #cabeça
         self._turtle.pendown()
         self._turtle.begin_fill()
         self._turtle.circle(4)
