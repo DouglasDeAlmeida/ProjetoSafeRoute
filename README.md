@@ -39,19 +39,19 @@ dos dados disponibilizados pelo google maps.
  
 As movimentações dos agentes ocorrem por meio de 3 algoritmos:
 
-	DFS (Depth First Search).
+- DFS (Depth First Search).
 	
-		Este algoritmo tem como objetivo percorrer todos os componentes de uma ramificação da matriz antes de voltar para o ponto inicial. Ele permite que o agente ande por todas as celulas do mapa.
+	- Este algoritmo tem como objetivo percorrer todos os componentes de uma ramificação da matriz antes de voltar para o ponto inicial. Ele permite que o agente ande por todas as celulas do mapa.
 	
  
-	A*.
+- A*.
 	
-		O algoritmo AStar é utilizado para encontrar o menor caminho entre dois pontos. No nosso projeto foi ele foi utilizado para o “Pacman” ir da entrada do shopping até a entrada de uma loja. 
+	- O algoritmo AStar é utilizado para encontrar o menor caminho entre dois pontos. No nosso projeto foi ele foi utilizado para o “Pacman” ir da entrada do shopping até a entrada de uma loja. 
 	  
 
-	Vaguear.
+- Vaguear.
 	
-		A finalidade deste algoritmo é movimentar os “fantasmas”. O vaguear faz com que os agentes andem aleatoreamente pelo mapa.
+	- A finalidade deste algoritmo é movimentar os “fantasmas”. O vaguear faz com que os agentes andem aleatoreamente pelo mapa.
     
 #### 7.	Limitações da Solução:
 
