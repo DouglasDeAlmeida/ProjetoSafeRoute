@@ -17,8 +17,9 @@ Nosso objetivo e idealização da solução ”Safer-Route”, usamos de tecnolo
 
 ### 3.	Uso da tecnologia:
 
- Identificamos os índices de aglomeração em espaços comerciais como foco central da nossa solução, trabalho este bastante complexo por conta da escassez dos dados. Em especial, a falta de informações com relação a contagem de fluxo e contagem de pessoas para determinado dias e picos de horários que transitam em espaços privados.
- Nossa idealização e desafio quanto ao propósito do projeto é evidenciado no uso da Ciência de dados a fim de dispor uma ferramenta tecnológica aos usuários para que informe dos possíveis horários programados com métricas que evidenciam o cenário com menor aglomeração segundo os dados levantados de fluxo a partir de determinados dados, como dia da semana e horário, para qual o usuário tem a pretensão de visitar um case comercial específico.
+  Identificamos os índices de aglomeração em espaços comerciais como foco central da nossa solução, trabalho este bastante complexo por conta da escassez dos dados. Em especial, a falta de informações com relação a contagem de fluxo e contagem de pessoas para determinado dias e picos de horários que transitam em espaços privados.
+ 
+  Nossa idealização e desafio quanto ao propósito do projeto é evidenciado no uso da Ciência de dados a fim de dispor uma ferramenta tecnológica aos usuários para que informe dos possíveis horários programados com métricas que evidenciam o cenário com menor aglomeração segundo os dados levantados de fluxo a partir de determinados dados, como dia da semana e horário, para qual o usuário tem a pretensão de visitar um case comercial específico.
  Assim, demos evidência para o menor potencial de contágio diante do cenário apresentado, com menores níveis de fluxo que estejam em trânsito no interior do estabelecimento comercial pretendido, dando a confiabilidade para uma visita tranquila e menor possibilidade de contrair o vírus.
  
  ### 4.	Case observado e problema:
@@ -30,7 +31,7 @@ Nosso objetivo e idealização da solução ”Safer-Route”, usamos de tecnolo
 
  Para coleta dos dados foi utilizado para apuração das métricas por meio de pesquisas e observação empírica de comportamento, e fatos constatados no case o Shopping Iguatemi São Paulo, extraídos  através de pesquisas disponíveis na internet e manipulando os referidos dados para constituição de dataset não estruturado compilados em uma dicionário com uso da linguagem Python.
 
-#### 6.	Metodologia operacional:
+### 6.	Metodologia operacional:
 
 A simulação foi criada a partir do Turtle, utilizando a biblioteca gráfica Lib/turtle.py que por sua vez é baseada na linguagem de programação Logo. 
  
