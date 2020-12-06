@@ -20,11 +20,13 @@ Nosso objetivo e idealização da solução ”Safer-Route”, usamos de tecnolo
   Identificamos os índices de aglomeração em espaços comerciais como foco central da nossa solução, trabalho este bastante complexo por conta da escassez dos dados. Em especial, a falta de informações com relação a contagem de fluxo e contagem de pessoas para determinado dias e picos de horários que transitam em espaços privados.
  
   Nossa idealização e desafio quanto ao propósito do projeto é evidenciado no uso da Ciência de dados a fim de dispor uma ferramenta tecnológica aos usuários para que informe dos possíveis horários programados com métricas que evidenciam o cenário com menor aglomeração segundo os dados levantados de fluxo a partir de determinados dados, como dia da semana e horário, para qual o usuário tem a pretensão de visitar um case comercial específico.
+ 
  Assim, demos evidência para o menor potencial de contágio diante do cenário apresentado, com menores níveis de fluxo que estejam em trânsito no interior do estabelecimento comercial pretendido, dando a confiabilidade para uma visita tranquila e menor possibilidade de contrair o vírus.
  
  ### 4.	Case observado e problema:
  
  A partir de métricas observadas para um case comercial específico: SHOPPING IGUATEMI, situado na cidade de São Paulo – SP, analisamos o comportamento empírico no que tange os níveis de aglomeração de pessoas que transitam no interior da área deste estabelecimento comercial e observamos os níveis de aglomeração no decorrer do dia para determinados picos de horários.
+
 É evidente que em um maior numero de pessoas o contato físico é inevitável o que pode aumentar as chances de contágio, cenário este perfeito para incidência e proliferação do vírus entre os que circulam. Consequentemente, surge um sentimento de insegurança entre os clientes, o que faz com que estes indivíduos restrinjam suas visitas à estes espaços. Logo, as famílias e empresas que obtêm receitas advindas desse segmento acabam encontrando sérios prejuízos econômicos.
 
 ### 5.	Coleta de Dados:
