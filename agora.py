@@ -53,14 +53,3 @@ def classificacao_metricas_observadas():
         print('RECOMENDO AGUARDAR!!!')
         return nivel_aglomeracao
 
-
-
-'''
-
-def main():
-    driver = obter_driver()
-    iniciar_ferramenta_fluxo_horario(driver)
-    agora = uso_ferramenta_fluxo_horario_real(driver)
-    #classificacao_metricas_observadas(agora)
-main()
-'''
