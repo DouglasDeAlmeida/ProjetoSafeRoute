@@ -15,7 +15,7 @@ def obter_driver():
     driver.implicitly_wait(20)
     agora = driver.find_element_by_class_name("ujewvc").text
     sleep(5)  # Esta funcao estabelece o tempo para ferramenta agora executar;
-    print(agora)
+    #print(agora)
     return agora
     driver.quit()
 
