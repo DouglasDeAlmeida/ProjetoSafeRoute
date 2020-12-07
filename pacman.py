@@ -8,7 +8,7 @@ import myInput
 def main():
     '''IMPORTANTE: BAIXAR O ARQUIVO "legend.gif" e colocar o caminho dele no método criar_tela (labirinto)'''
     #esse é o método principal
-    #projeto_SaferRoute()
+    projeto_SaferRoute()
 
     #REQ-02
     #um_agente_vagueia()
@@ -23,7 +23,7 @@ def main():
     #varios_agentes_percorrem_tudo()#OBS: precisa definir no input a quantidade agentes
 
     #REQ-07
-    agente_com_um_destino()
+    #agente_com_um_destino()
 
     #REQ-08
     #agente_com_n_destinos()#OBS: precisa definir no input a quantidade agentes
@@ -156,18 +156,15 @@ def projeto_SaferRoute():
 def varios_agentes_percorrem_tudo():
     dimensao_da_matriz = 20
     lab = Labirinto(dimensao_da_matriz)
-    #id = 0
-    #agente = lab.add_pacman(id)
+    id = 0
+    agente = lab.add_pacman(id)
     n_agentes= int(input("defina quantos agentes"))
 
 
-
-        #agente =lab.add_fantasma(id)
-
-    intervalo_entre_frames = 0.1
+    intervalo_entre_frames = 0.5
     agentes = lab.agentes
     chegou_ao_fim = False
-    for id in range(0, n_agentes):
+    for id in range(1, n_agentes):
         lab.add_fantasma(id)
 
 
@@ -177,7 +174,7 @@ def varios_agentes_percorrem_tudo():
 
             agentes[id].percorrer()
 
-        #chegou_ao_fim = agente.percorrer()
+        chegou_ao_fim = agente.percorrer()
         # Atualiza "frame"
         update()
         sleep(intervalo_entre_frames)

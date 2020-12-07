@@ -19,12 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4a649f9-260a-4d2d-97a6-f514454d0659" name="Default Changelist" comment="contem erros5">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="b4a649f9-260a-4d2d-97a6-f514454d0659" name="Default Changelist" comment="faltam ajustes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agente.py" beforeDir="false" afterPath="$PROJECT_DIR$/agente.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labirinto.py" beforeDir="false" afterPath="$PROJECT_DIR$/labirinto.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agora.py" beforeDir="false" afterPath="$PROJECT_DIR$/agora.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myInput.py" beforeDir="false" afterPath="$PROJECT_DIR$/myInput.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pacman.py" beforeDir="false" afterPath="$PROJECT_DIR$/pacman.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/percursos.py" beforeDir="false" afterPath="$PROJECT_DIR$/percursos.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +51,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -233,7 +234,28 @@
       <option name="project" value="LOCAL" />
       <updated>1606758059747</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="faltam ajustes">
+      <created>1607200638347</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607200638347</updated>
+    </task>
+    <task id="LOCAL-00009" summary="faltam ajustes">
+      <created>1607200644320</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607200644320</updated>
+    </task>
+    <task id="LOCAL-00010" summary="adicionada a ferramenta de aglomeração momentanea">
+      <created>1607358647323</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607358647323</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,7 +281,9 @@
     <MESSAGE value="FALTA FAZER O MOVIMENTO NO ARQUIVO AGENTE" />
     <MESSAGE value="contem erros" />
     <MESSAGE value="contem erros5" />
-    <option name="LAST_COMMIT_MESSAGE" value="contem erros5" />
+    <MESSAGE value="faltam ajustes" />
+    <MESSAGE value="adicionada a ferramenta de aglomeração momentanea" />
+    <option name="LAST_COMMIT_MESSAGE" value="adicionada a ferramenta de aglomeração momentanea" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

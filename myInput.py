@@ -1,5 +1,5 @@
 
-
+import agora
 
 def entrada():
 
@@ -48,9 +48,17 @@ def entrada():
         nivel_aglomeracao = domingo.get(b)
         return nivel_aglomeracao
 
-#agora fazendo o reconhecimento da aglomeração
+def visita():
+    visita = (input("agora ou programada:"))
+    if visita == "agora":
+        visita = agora.classificacao_metricas_observadas()
+        return visita
+    else:
+        visita = entrada()
+        return visita
+
 def qtd_fantasmas():
-    nivel_aglomeracao = entrada()
+    nivel_aglomeracao = visita()
     if nivel_aglomeracao <= 30:
         v = print('Nivel de aglomeração baixo')
         #fazer 2 fantasmas
@@ -62,13 +70,10 @@ def qtd_fantasmas():
         nGhosts = 30
         return nGhosts
     elif (nivel_aglomeracao > 65):
-        v =print('Nivel de aglomeração alto, recomendamos aguardar. Caso precise continuar, o caminho a seguir é o mais rápido.')
+        v =print('Nivel de aglomeração alto')
         #fazer 10 fantasmas
         nGhosts = 60
         return nGhosts
-
-
-
 
 
 

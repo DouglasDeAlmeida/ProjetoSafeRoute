@@ -93,7 +93,7 @@ class Waze:
         """ Retorna os vizinhos de uma célula utilizando um outro método
          TODO: adicionar o celula ocupada o if"""
 
-        #if (lab.eh_caminho(passo) == True) and (lab.eh_celula_ocupada(passo) == False):
+        #if (lab.eh_caminho(vlin, vcol) == True) and (lab.eh_celula_ocupada(vlin, vcol) == False):
         #and (lab.eh_celula_ocupada(vlin, vcol)==False)
         lab = self.labirinto # Para aumentar a legibilidade
         lst_vizinhos = []
@@ -102,7 +102,7 @@ class Waze:
             lin, col = celula._coord_matr
             vlin, vcol = lin + i, col + j
 
-            if (lab.eh_caminho( vlin, vcol ) == True) :
+            if (lab.eh_caminho(vlin, vcol) == True):
                 vizinho = lab.criar_celula(pai=celula, coord_matr=(vlin,vcol))
                 lst_vizinhos.append(vizinho)
         return lst_vizinhos

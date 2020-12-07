@@ -105,6 +105,22 @@ class Agente:
         self._turtle.down()
         self.homi(self._cor)
 
+    def desenhar_se2(self, posicao=None):
+        """ Leva a tartaruga até a posição (x,y) e desenha por exemplo um círculo
+            para representar o agente (i.e., pacman, fantasmas)
+        """
+
+        self._turtle.clear()
+        if (not posicao):
+            posicao = self._posicao
+
+        x, y = posicao.coord_turt_centralizada()
+        self._turtle.up()
+        self._turtle.goto(x, y)
+
+        self._turtle.down()
+        self._turtle.dot(20,self._cor)
+
     """ Métodos de percurso """
 
     def add_percurso(self):
@@ -125,8 +141,28 @@ class Agente:
             self._waze.gerar_percurso(pos_agente)  # Gere um percurso
 
         if (not self._waze.esta_sem_coord()):  # Se houver coordenadas a serem seguidas
+
             self._posicao = self._waze.obter_prox_coord()  # Obtenha a próx e defina como a posição do agente
         self.desenhar_se()  # Desenha o agente na posição em que se encontra
+
+        return False  # Se chegou até aqui é o porque não terminou o percurso e retorna False
+
+    def percorrer2(self):
+        """ Percorrer significa seguir passar por todas as celulas do labirinto """
+        pos_agente = self._posicao  # Para melhorar a legibilidade
+
+        self.add_percurso()
+        if (self._waze.fim_percurso()):  # Questiona se é fim de percurso
+            self._waze = None  # Se o percurso terminou, reinicializa o _waze
+            return True  # Se terminou, retorna indicando o término
+
+        if (self._waze.esta_sem_coord()):  # Se _waze está criado, mas sem coordenadas
+            self._waze.gerar_percurso(pos_agente)  # Gere um percurso
+
+        if (not self._waze.esta_sem_coord()):  # Se houver coordenadas a serem seguidas
+
+            self._posicao = self._waze.obter_prox_coord()  # Obtenha a próx e defina como a posição do agente
+        self.desenhar_se2()  # Desenha o agente na posição em que se encontra
 
         return False  # Se chegou até aqui é o porque não terminou o percurso e retorna False
 
