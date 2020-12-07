@@ -49,7 +49,9 @@ def entrada():
         return nivel_aglomeracao
 
 def visita():
-    visita = (input("agora ou programada:"))
+    visita = (input("Usuario! Se desejar fazer uma visitar imediata ao Shopping\n" 
+                    "para obter nivel de aglomeracao em  tempo real - digite: agora.\n"
+                    "Caso queira fazer uma simulação para um dia e horario específico digite: sou o rei da cocada preta :"))
     if visita == "agora":
         visita = agora.classificacao_metricas_observadas()
         return visita
